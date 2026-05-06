@@ -10,11 +10,14 @@
 </head>
 
 <body>
+    <nav>
+        <ul>
+
+        </ul>
+    </nav>
+
     <h1>Flaggle</h1>
 
-    <nav>
-
-    </nav>
 
     <div class="container">
 
@@ -71,7 +74,7 @@
         const rekkefølge = [8, 0, 5, 2, 1, 3, 7, 6, 4]
         let gjetningNr = 0
 
-        const land = ["Norge", "Sverige", "Danmark", "Finland"]
+        const land = ["Norge", "Sverige", "Danmark", "Finland", "Tyskland", "Nederland", "Russland"]
 
 
         const tilfeldig = Math.floor(Math.random() * land.length)
@@ -81,7 +84,12 @@
         const landURL = ["https://flagcdn.com/w320/no.png",
             "https://flagcdn.com/w320/se.png",
             "https://flagcdn.com/w320/dk.png",
-            "https://flagcdn.com/w320/fi.png"]
+            "https://flagcdn.com/w320/fi.png",
+            "https://flagcdn.com/w320/de.png",
+            "https://flagcdn.com/w320/nl.png",
+            "https://flagcdn.com/w320/ru.png",
+
+            ]
         boksContainerEl.style.backgroundImage = "url(" + landURL[tilfeldig] + ")"
 
         function avslørBoks() {

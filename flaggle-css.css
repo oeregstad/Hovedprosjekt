@@ -14,8 +14,10 @@ body{background-color: grey;}
 
 h1 {
     text-align: center;
+    font-size: 3rem;
 
 }
+
 
 .flagg-container {
     display: grid;

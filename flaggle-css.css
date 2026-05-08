@@ -5,10 +5,10 @@
 }
 
 nav {
-    background-color: cornflowerblue;
+    background-color: dodgerblue;
 }
 
-body{background-color: grey;}
+body{background-color: rgb(31, 34, 142);}
 
 
 
@@ -17,6 +17,13 @@ h1 {
     font-size: 3rem;
 
 }
+
+ul{
+    border: 1px solid black;
+    width: 100vw;
+}
+
+
 
 
 .flagg-container {

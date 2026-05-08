@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 110vh;
+}
+
+.games {
+    color: blanchedalmond;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -13,16 +21,20 @@ nav {
     background-color: rgba(202, 181, 181, 0.8);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0.5rem;
+    gap: 50px;
+
+
 }
 
 .nav-logo {
-    font-size: 1rem;
+    font-size: 1.3rem;
     font-weight: 100;
     text-decoration: zero;
     color: #111;
     letter-spacing: 0.5px;
+    text-decoration: none;
 }
 
 .nav-links {
@@ -32,8 +44,9 @@ nav {
 }
 
 .nav-links a {
-    font-size: 14px;
+    font-size: 1.3rem;
     color: #aaa;
+    text-decoration: none;
 }
 
 .burger {
@@ -91,7 +104,94 @@ nav {
     padding: 0.85rem 2.5rem;
     border-bottom: 0.5px solid #f5f5f5;
     background: none;
+
+}
+
+.banner {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.banner h1 {
+    font-size: 5rem;
+}
+
+
+.main {
+    min-height: 100vh;
+    background-color: #595050;
+    display: grid;
+    place-items: center;
+
+}
+
+
+.form {
+    height: 300px;
+    border: 1px solid white;
+    width: 600px;
+
+
+}
+
+.flaggle-container {
+    margin-left: 750px;
+    display: flex;
+    align-items: center;
+    background-color: blanchedalmond;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  
+   
+
+}
+
+.flag-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    width: 500px;
+    height: 125px;
+    border-radius: 10px;
+    overflow: hidden;
+
     
+}
+
+.flag-grid .cell {
+    width: 100%;
+    height: 100%;
+}
+
+.fg-red {
+    background: #e63946;
+}
+
+.fg-white {
+    background: #f1faee;
+}
+
+.fg-blue {
+    background: #457b9d;
+}
+
+.fg-gold {
+    background: #e9c46a;
+}
+
+.fg-green {
+    background: #2a9d8f;
+}
+
+
+
+.other-game-container {
+    margin-right: 750px;
 }
 
 

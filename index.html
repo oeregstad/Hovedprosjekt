@@ -12,16 +12,16 @@
     <nav>
         <a class="nav-logo" href="#">Daily<span class="games">games</span></a>
         <ul class="nav-links">
-            <li><a href="#">Hjem</a></li>
-            <li><a href="#">Spill</a></li>
+            <li><a href="index.html">Hjem</a></li>
+            <li><a href="#spill">Spill</a></li>
         </ul>
         <button class="burger">
             <span></span><span></span><span></span>
         </button>
 
         <div class="mobile-menu" id="mobile-menu">
-            <a href="index.html">hjem</a>
-            <a href="flaggle.html">spill</a>
+            <a href="index.html">Hjem</a>
+            <a href="flaggle.html">Spill</a>
         </div>
     </nav>
 
@@ -31,16 +31,16 @@
     </section>
 
 
-    <section class="main">
+    <section class="main" id="spill">
         <a class="flaggle-container form" href="flaggle.html">
-            
+
             <div class="flagge-left">
                 <h1>FLAGGLE</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos velit, maiores, illo veniam, dolorum
                     commodi aliquam repellendus quis vel mollitia odio culpa pariatur aperiam assumenda nam tempore
                     provident ullam enim!
                 </p>
-            
+
             </div>
             <div class="flag-grid">
                 <div class="cell fg-red"></div>
@@ -55,8 +55,15 @@
             </div>
 
         </a>
-                <div class="other-game-container form"></div>
-        </section>
+        <a class="other-game-container form" href="kryptert.html">
+
+            <h1>Kryptert</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis commodi nobis provident neque vel
+                voluptatibus laborum et quibusdam accusantium, exercitationem aspernatur possimus! Ratione voluptates at
+                iste cupiditate veritatis quis. Fuga.</p>
+            
+        </a>
+    </section>
 
 
     <script>
@@ -66,6 +73,13 @@
         burgerEl.addEventListener("click", () => {
             burgerEl.classList.toggle("open")
             mobileMenuEl.classList.toggle("open")
+        })
+
+        window.addEventListener("resize", () => {
+            if (window.innerWidth > 600) {
+                mobileMenuEl.classList.remove("open")
+                burgerEl.classList.remove("open")
+            }
         })
     </script>
 </body>
